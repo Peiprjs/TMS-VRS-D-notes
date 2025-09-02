@@ -1,3 +1,108 @@
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+\section{Structure of an atom}
+An atom of X element has Z number of protons, N number of neutrons [n(0)], and a mass (A) of Z+N. \\
+An element can be expressed as \ch{^{A}_{Z}X} \par.
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+\section{Radioactive decay}
+Decay may occur due to:
+ \begin{enumerate}
+	\item Too many protons
+	\item Too many neutrons
+	\item Too many neutrons and protons
+	\item Energetically excited state
+\end{enumerate}
+The chart of nucleides expresses in black the stable nuclei, and in white the unstable nuclei. Isobars have the same mass (A), and isotopes have the same number of P+ (Z).
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+\section{Ionizing radiation}
+Radiation is energy released as electromagnetic waves or particles. \\
+Ionization means removing electrons from the electron cloud of the atom. \\
+Ionizing radiation can consist of:
+ \begin{enumerate}
+	\item Particle radiation (with high energy)
+	 \begin{enumerate}
+		\item Alpha decay
+		\item Beta decay
+		\item Electron capture
+		\item Positron emission
+	\end{enumerate}
+	 \item Electromagnetic radiation (with high energy)
+	 \begin{enumerate}
+		\item Isomeric transition (gamma emission)
+	\end{enumerate}	 
+\end{enumerate}
+Which radiation type occurs can be seen on the chart of nucleides (see slide 10). 
+\subsubsection{Alpha decay (\alpha)}
+Occurs when the nucleus is unstable, due to being too big.\\
+The parent atom \ch{^{A}_{Z}X} gets split into a daughter atom \ch{^{A-4}_{Z-2}Y} and an alpha particle \ch{^{4}_{2}\alpha}.
+\subsubsection{Beta decay (\beta)}
+Occurs when the nucleus is unstable, due to having an excess of n.\\
+The parent atom \ch{^{A}_{Z}X} gets split into a daughter atom \ch{^{A}_{Z+1}Y}, a beta particle \ch{^{0}_{-1}e^{-}}, and an anti-neutrino \abs{v}_e.
+\subsubsection{Electron capture (E.C. or \epsilon)}
+Occurs when the nucleus is unstable, due to having an excess of p.\\
+The parent atom \ch{^{A}_{Z}X} absorbs an electron \ch{^{0}_{-1}e^{-}}, and gets split into a daughter atom \ch{^{A}_{Z-1}Y}, and a neutrino v.
+If the hole is filled by an outer shell electron, X-rays are emmitted.
+[...]
+\subsubsection{Positron emission (\beta^{+})}
+Occurs when the nucleus is unstable, due to having an excess of p.\\
+The parent atom \ch{^{A}_{Z}X} gets split into a daughter atom \ch{^{A}_{Z+1}Y}, a positron \ch{^{0}_{+1}e^{+}}, and a neutrino v.
+After a number of interactions, the positron unites with an electron and converts its entire mass to energy. This annihilation produces 511 keV.
+\subsubsection{Gamma decay (\gamma)}
+Occurs when the atom is excited.\\
+The parent atom \ch{^{A}_{Z}X*} gets excited and produces a daughter particle \ch{^{A}_{Z}X} and a gamma ray \gamma^{1}.
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+\section{Activity}
+\subsection{Unit of activity (A)}
+The unit of activity is the Becquerel (Bq). 1 Bq = 1 disintegration per second.
+The specific activity is the activity per mass (Bq/g)
+The old unit was Curie (Ci), equivalent to 3.7·10^{10}Bq
+ \subsection{Decay law}
+ Decay is a random process. 
+Activity is proportional to the number of nuclei and the decay constant \lambda (s^{-1}):
+\[ A = -\frac{dN}{dt} = \lambda N \]
+The half life is the number of seconds that it takes to decay half of all nuclei present:
+\[ t_{1/2} = -\frac{ln2}{\lambda} = \frac{0.693}{\lambda} \]
+The activity (A_t) on time (t) can be approximated as:
+\[ A_{t} = A_0 * e^{-\frac{t}{t_{1/2}}*ln(2)} \]
+\[ A_{t} = A_0 * \frac{1}{2}^{-\frac{t}{t_{1/2}}} \]
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+\section{Electromagnetic radiation}
+Electromagnetic radiation is non-material. \\
+The smaller the wavelength, the higher the frequency, and the higher the energy.
+\[ \lambda = \frac{c}{v} \]
+\[E = \frac{hc}{\lambda} = h*v \]
 
+\subsection{Generation of X-rays}
+X-rays happen when high energy atoms are slowed down by matter. An atom is bombarded by electrons. When an electron hits another electron, a hole is formed. This is then filled by an electron from the electron shell, which releases energy. Three situations can occur: 
+ \begin{enumerate}
+	\item The electron can hit the nucleus, which produces the maximum energy.
+	\item The electron can have a close interaction, which produces moderate energy.
+	\item The electron can have a distant interaction, which prouces low energy.
+\end{enumerate}
+The X-ray tube produces X-rays. It depends on the electron energy (regulated by the tube voltage), and the anode material (usually tungsten). <1\% of energy is converted to X-rays, and the rest is heat. 
+The X-ray tube has a spectrum of emission, called the Spectrum Bremsstrahlung.
+In an X-ray spectrum there's always peaks. Those are called the characteristic X-rays, and they depend on the material. X-rays can be filtered or unfiltered. This reduces the amount of X-rays in the areas that aren't of interest. The filter affects the X-rays differently depending on the material it's made out of.
+
+\subsection{Interaction of radiation with matter}
+Gamma and X-rays can interact with matter in the following ways:
+ \begin{enumerate}
+	\item Classic scattering (mainly non-ionising radiation)
+	\item Photo effect
+	\item Compton effect
+	\item Pair production
+\end{enumerate}
+Which method occurs depends on the photon energy and the atomic number (see slide 61)
+\subsubsection{Classic scattering}
+Also called elastic, coherent or Rayleigh scattering.
+Gamma energy remains unchanged, but the direction of the photon may change. It is important at low E_{\lambda}
+
+\subsubsection{Photo effect}
+The photon knocks an electron out of its orbit. The electron has binding energy, so the resulting energy is minimal. It goes up to 0.5MeV. The chance is roughly proportional to Z^4, and it produces characteristic X-rays.
+
+\subsubsection{Compton effect}
+The dominant effect at higher energies. Depends on the material.
+The photon is scattered at weakly bound electrons, transferring partly the energy to the electron. However, it continues and may hit another electron. It can go through the material, with less energy that it came in.
+The degree of energy transfer depends on the scatter angle. The maximal energy will be at 180ª, and the minimal energy at 0º. With a portable X-ray tube it's better to have it below the bed, as it's shielded, and most of the backscatter will go to the rear.
+
+\subsubsection{Pair production}
+Near the nucleus, the photon can create both an electron and a positron, if it has enough energy. This usually results in an annihilation, usually outside of the atom, creating 2 511keV photons, at 180º from each other. This can only occur at energies of over 1.022MeV (mass of the electron + positron). 
 
