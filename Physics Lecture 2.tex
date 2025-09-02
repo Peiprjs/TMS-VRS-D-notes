@@ -1,3 +1,100 @@
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+\section{Interaction of charged particles with matter}
+Photons do not experience energy loss per distance. However, charged particles do. There is a certain amount of energy loss per cm (LET: Linear Energy Transfer), or Stopping Power. Alpha particles have a high stopping power, as they lose a lot of energy at a short distance.\\
+The range is the maximum distance that charged particles can travel in matter. It depends on the type of charged particle, the energy of the charged particle, and the density of the material. Not every electron has the same speed, as the energy is distributed unequally and randomly between the electron and the neutrino. The mean energy is lower than the 50\% of the range. \\
+Rule of thumb (produces an overestimation) for $\beta$ with E > 0.6 MeV:
+\[ R (cm) * \rho (\frac{g}{cm³} )= 0.5\ E_{\beta,max} (MeV) \]
+Soft tissue is very equivalent to water, and thus can be approximated to a density of 1. Air is around 1000 times higher.
+
+\subsection{Interaction of $\alpha$ particles with matter}
+Due to the interaction with the electrons of atoms (ionizations and excitations), the energy of an $\alpha$ particle decreases. It disposes of its energy linearly along a straight path. The range/pathway depends on the energy of the radiation and the density of the material\\
+Alpha particles have a high stopping power. They lose a lot of energy at a short distance (small range, thick track). They are unable to pass the epidermis, but they are very dangerous if ingested. \\
+
+\subsection{Interaction of protons with matter}
+Protons behave like $\alpha$ particles, but they can be directed to deposit most of their energy at a specific point (Bragg peak). The Bragg peak can be manipulated with the energy.
+
+\subsection{}
 
 
+\subsection{Shielding from ionizing radiation}
+Shielding for particles only needs to be as thick as the maximal range. However, for photons, you the shielding needs to be as thick as deemed reasonably safe. \\
+The $\gamma$-photon pathway is much longer than the $\beta$-particle, which is longer than the $\alpha$-particle pathway.
+\subsubsection{Alpha}
+For $\alpha$ particles, barely any shielding is necessary. 
+\subsubsection{Beta}
+For $\beta$ particles, the rule of thumb can be applied. Shielding materials with a low Z-value cause less Bremsstrahlung. Such materials are Perspex or aluminum (mostly Perspex, as it's see-through, and has an even lower Z-value). Bremsstrahlung causes a loss of energy, which is released as a photon, usually in the X-ray range. $\beta$ emmitters are usually stored in a perspex container in a lead container. Perspex is often used a a mimic for tissue.
+\subsubsection{Gamma}
+For $\gamma$ and X-rays, the material cannot stop them entirely but rather attenuate them. It depends on the energy of the radiation, and the density of the material (or rather Z value, the highest Z-value attenuates the most). The attenuation can be calculated with:
+\[  I_d = I_0\ e^{-\mu d}   \]
+Where d is the thickness of the material and $\mu$ is the attenuation coefficient. After $d_{1/2}$, the photon intensity is halved:
+\[  d_{1/2} = \frac{ln2}{\mu}  \]
+Transmission is the ratio between the original intensity and the dampened intensity.
+\[  T = \frac{I_d}{I_0}	 \]
+
+\subsection{Inverse square law}
+Electromagnetic radiation is a Newtonian form of radiation, which means that it decreases in intensity by the square of the distance. This is because the intensity is the number of photons/sm², and the surface of a sphere increases with the square of the radius.
+
+\section{Dose}
+\subsection{Definition of dose}
+An absorbed dose (D) is the absorbed energy per mass of matter. We use the Gray (Gy), equivalent to 1 Joule/kg.
+\subsection{Calculation of a $\gamma$ dose rate}
+\[ H = \frac{h(10)A}{r^2} \]
+Where h(10) is the ambience dose equivalent rate/source constant, H is the dose rate, A is the activity, and r is the distance.\\
+The h(10) is exclusive for nucleides with gamma emission. There's tables that can be used.
+\subsection{Rules of thumb}
+
+\subsubsection{$\beta$ radiation}
+The source of an A MBq source that emits a $\beta$ particle of E MeV per decay event at 10 cm is
+\[ H_{skin} = 1000A (\frac{\mu Sv}{h} \]
+
+\subsubsection{$\gamma$ radiation}
+The source of an A MBq source that emits a $\gamma$ photon of E MeV per decay event at 30 cm is
+\[ H = 2A (\frac{\mu Sv}{h} \]
+
+\subsection{Dose reduction}
+- Time -> Work fast
+- Distance -> Stay away
+- Shielding -> Use shielding
+- Activity -> Use the minimum needed
+
+\subsection{Buildup factor}
+The attenuation law assumes a narrow beam. However, that's not correct. Depending on the shielding material, there may be a lot of backscatter, which amplifies the radiation after the shielding. The build-up factor depends on the energy and the material, and it may need additional shielding to compensate. The buildup factor can be considerable, commonly factor 2-4, but even goes higher than 100.
+
+\subsection{Dose and biology}
+\begin{table}[]
+\begin{tabular}{llll}
+Quantity        & Symbol & Unit         & Type       \\
+Absorbed dose   & D      & Gray (Gy)    & Physical   \\
+Equivalent dose & $H_T$    & Sievert (Sv) & Biological (Specific part) \\
+Effective dose  & E      & Sievert (Sv) & Biological (Whole body)
+\end{tabular}
+\end{table}
+
+\subsubsection{Equivalent dose}
+The seriousness of biological tissue damage is also determined by the way that energy is disposed. It depends on the kind of radiation. $\alpha$ radiation has more ionizations per path length, so it does more damage than $\beta$ or $\gamma$.
+\[ H_T = D * W_R\]
+Where $W_R$ is the radiation weighting factor, and D is the absorbed dose in Gray
+
+\begin{table}[]
+\begin{tabular}{ll}
+Type of radiation & $W_R$    \\
+$\beta$             & 1      \\
+$\gamma$            & 1      \\
+X-ray             & 1      \\
+n                 & 5-20   \\
+p                 & 1.1-10 \\
+$\alpha$            & 20    
+\end{tabular}
+\end{table}
+
+\subsubsection{Effective dose}
+It is a quantity used for comparison of risks. The effective dose is the radiation dose needed in homogenous total body irradiation to obtain the same risk.
+\[ \sum_{T}^{}H_T\cdot W_T \]
+Where $H_T$ is the equivalent dose and $W_T$ is the tissue weighting factor (See Table 5.2 in the book). $W_T$ depends on the rate of division of the cells in each organ.
+
+\subsubsection{Dose Conversion Coefficients}
+To calculate the effective (committed = internal) dose after contamination (ingestion) with radionucleides, the following formula is used:
+\[ E_{committed} = A*e_{50}\]
+E(50) is the effective dose received over 50 years after intake, and it depends on the chemical form, way of intake, and sometimes disease of the patient. The e(50) or DCC or $e_{inh/ing}$ is a coefficient that can be looked up on tables.
+
+To calculate the effective dose after skin contamination, e(50) (Sv/Bq) and $DCC_{skin}$ (mSv/s per kBq/cm²) are used for contamination, h(10) is used for irradiation ($\mu$ Sv/h per MBq/m²)
