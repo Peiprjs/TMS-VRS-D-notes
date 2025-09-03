@@ -1,0 +1,49 @@
+The purpose of measuring is to determine the type of radiation, the activity, the energy of the radiation, or the (effective) dose or dose rate.
+\section{Principles of radiation detection}
+\begin{table}[]
+\begin{tabular}{lll}
+Principle of operation & Detector material                                                        & Detector type                                                              \\
+Electrical charge      & \begin{tabular}[c]{@{}l@{}}Gas\\ Solid state\end{tabular}                & \begin{tabular}[c]{@{}l@{}}Gas-filled\\ Semiconductor\end{tabular}         \\
+Luminescence           & \begin{tabular}[c]{@{}l@{}}Solid/liquid state\\ Solid state\end{tabular} & \begin{tabular}[c]{@{}l@{}}Scintillation\\ Thermoluminescence\end{tabular} \\
+Chemical reaction      & Photographic emulsion                                                    & Densitometer                                                               \\
+Warmth                 & Solid/liquid state                                                       & Calorimeter                                                                \\
+Activation             & Solid state                                                              & Activation dose meter                                                     
+\end{tabular}
+\end{table}
+
+\section{Ionization/Electric charge}
+\subsection{Gas-filled detectors}
+Gas-filled detectors have a closed tube that contain air or another gas. When radiation enters the tube, ionization occurs. The walls of the detector have a voltage between them, which separates the ions, and this can be measured through the current. The current is proportional to the primary electron-ion pairs, which is proportional to the absorbed amount of energy. However, these detectors have a a recombination region (Applied voltage < Saturation voltage), in which they can work. Above the saturation voltage, there's the saturation region, in which the detector can't detect more because all formed ion pairs can reach the electrodes, and cannot recombinate. They consist of a tube with very thin membranes at the end (protected by a mesh or bars).\\
+
+\subsubsection{Ionization chamber}
+They produce very small electrical signals. They aren't used in pulse mode to detect indiviual counts, but rather used for radiation intensity. They are most suited to detect radiation with high energy deposition ($\alpha$ or $\beta$), or with high energy, but it's not efficient for $\gamma$ rays. It can be used as a dose calibrator to determine the amount of radioactivity of a known radioisotope.
+
+\subsubsection{Proportional counter region}
+At sufficiently high voltage, the accelerated primary electrons have enough energy to cause ionization themselves and form secondary electron pairs (cascade).\\
+The proportional counter uses the proportional counter region. It produces larger electrical signals than the ionization chamber, so it is used in pulse mode to detect individual counts. The electrical signal is proportional to the amount of deposited energy, so it can be used for energy selective counting. It's most suited to detect radiation with high energy deposition ($\alpha$ and $\beta$), and though it can detect $\gamma$, it's not as efficient. It can be used as a contamination monitor.
+
+\subsubsection{Geiger-Müller region}
+Similar to the proportional counter region, but even more. This is called the avalanche. At high voltage, emission photons are created, which can interact with gas, creating even more electron-ion pairs. The avalanche is stopped when a large number of 'slow' positive ions reduces the effective voltage, and the electrical charge becomes independent of absorbed energy.\\
+The Geiger-Müller counter uses the Geiger-Müller region. It produces larger electrical signals that can be easily measured with low cost electronics, so they are used in pulse mode. The electrical signal is independent of absorbed energy, so it's not used for energy-selective counting. It's inefficient for $\gamma$ rays, but it's more sensitive than the ionization chamber and the proportional counters. They are used as survey monitors.
+
+\subsection{Semiconductors}
+They work in a similar way to the gas-filled detectors, but they're more efficient for X- and $\gamma$-rays, given their higher stopping power. The energy needed to create a single electron-ion pair is much lower than for air, so a larger electrical signal is produced.\\
+Individual counts can be measured with a very high energy resolution, which produces an energy spectrum, which is a 'fingerprint' that is used to identify radio-isotopes.\\
+In order to suppress noise they must be cooled, so they are immovile and very heavy.
+
+\section{Luminescence}
+\subsection{Scintillation}
+They work through scintillations. This means that a photon is released in the UV or visible-light range when an excited electron returns to its ground state. The produced amount of light is proportional to the amount of energy. But this energy can be very small, so a photomultiplier tube is used by converting scintillation light to pulses of electrical current. The most common cathode is sodium iodide, or not as commonly, another salt. Radiation enters the crystal, and photons are released as a result.\\
+Solid materials can be used, such as NaI or CsI (for $\gamma$ radiation), or anthracene or stilbene (plastics, used for $\alpha$ and $\beta$ radiation). Organic liquid materials can also be used to detect $\alpha$ or $\beta$ radiation (a small amount of sample is put in the liquid), and it's best used for low-energy sources, as it's often the only way to check for contamination (with swipe or smear tests).\\
+Scintillation can also be used to identify materiials, although they have a lower resolution than semiconductors.
+
+\subsection{Thermoluminescence}
+It is often used in personal dosimeters. The thermoluminescent detector is made from a material that can emit photons upon heating after exposure to ionizing radiation. Therefore, it 'captures' radiation, and releases it when it's heated.
+
+\section{Efficiency}
+No detector is 100\% efficient. This is because even if the detector was perfect, you'd only be measuring by one side. The measurement efficiency depends on detector efficiency, geometric efficiency, the source, and the absorption between the source and the detector. The efficiency can be determined by measuring a source with known activity.
+\[ \epsilon = \frac{R_{net}}{A} = \frac{R_{gross}-R_{background}}{A}\]
+Where R<A, R being the count rate, and A being the actual activity. 
+
+\section{Counting statistics}
+
