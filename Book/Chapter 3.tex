@@ -1,14 +1,29 @@
-\section{Introduction}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{Interaction of $\alpha$ radiation}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Interaction of $\beta$ radiation}
+$\beta$ radiation has a spectrum between 0 and $E_{\beta,max}$. $\beta$ particles have an energy between 0 and $E_{\beta,max}$. They can be absorbed by 4 types of interactions.
+\subsection{Elastic collisions}
+It can collide with an electron that is strongly bound to the nucleus, without ejecting it from the orbit. The $\beta$ particle will bounce, without any energy transfer or loss, but a change in direction. This causes the particle to follow a winding path.
+\subsection{Inelastic collisions}
+In an inelastic collision, an electron is shot away from the electron shell, creating an ion. A $\beta$ particle has about 500x fewer ionisations per volume. Therefore, the energy is lower, but the range is higher.
+\subsection{Bremsstrahlung}
+When a moving electrically charged particle enters an EM field, its trajectory is deflected. This causes some energy loss, braking radiation. The higher energy of the particle and the stronger the field (Z-number), the higher this effect is. It is approximately:
+\[g \approx 2\cdot10^4\cdot Z\cdot E_{\beta,max}\]
+Perspex blocks well, and causes low Bremsstrahlung.
+\subsection{Čerenkov radiation}
+For a $\beta$ particle with energy >250keV, the speed approaches the speed of light. In water, a high energy particle may travel faster than light, emitting energy in the form of photons in the blue to violet region. The light may be visible to the naked eye. This does not slow the particles much.
+\subsection{Annihilation ($\beta^+$)}
+Occurs when a $\beta^+$ particle collides with an electron at the end of its path. They both get converted to 2 photons of 511keV each.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{X-rays}
+\section{Interaction processes of X-rays and $\gamma$ radiation}
+See section 3.5 of book.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{Interaction processes of X-rays and $\gamma$ radiation}%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Shielding of $\beta$ radiation}
+The range of $\beta$ radiation can be calculated with
+\[R_{\beta,\ in\ material} = \frac{R_{\beta,\ in\ water} = 0.5 E_{\beta,max}}{\rho_{material}}\]
+For water and tissue, $\rho$ can be estimated to be 1 g/cm³. $E_{\beta,max}$ is expressed in MeV.\\
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Shielding of a narrow beam of X-rays and of $\gamma$ radiation}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{Nucleide data}
+We are ignoring scattering/buildup.
+\[I(d) = I(0)\cdot B\cdot(\frac{1}{2})^{\frac{d}{d_{1/2}}}\]
+Buildup factor (P60) may often be ignored. All distance units must be in the same unit. The buildup factor increases with increasing half-thicknesses. With lead, it won't exceed 5 if <14 half-thicknesses are applied. For ther materials, it can reach >20.\\
+\[I(d) = I(0)\cdot e^{-\mu_{linear} d}; \mu_{mass} = \mu_{linear}\cdot\rho_{material}^{-1}\]
+Above 500keV, $\mu_{mass\ water}\approx\mu_{mass\ concrete}$.\\
