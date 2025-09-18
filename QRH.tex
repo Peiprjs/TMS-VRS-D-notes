@@ -42,6 +42,12 @@
 \textbf{Relative error}. $N$ is the number of counted pulses, $\sqrt{N} is the counting error$\\
 \[\epsilon = \frac{R}{A}\]
 \textbf{Efficiency}, where R is the counting rate in units of per second, and A is the activity in Bq.\\
+
+\section{Safety}
+\[A_{max}=\frac{0.02\cdot10^{p+q+r}}{e(50)_{inh}}\]
+\textbf{Maximum permissible activity}, expressed in Bq. 0.02 refers to the dose limit for exposed workers, p is the factor for dispersion, q is the parameter for the laboratory level, and r is for the local ventilation. See tables 3.3-3.5 for PQR values.
+\[    B_{\text{W practice}} = \frac{t_{\text{practice}}}{40} \times \frac{A_{\text{practice}}}{A_{\text{max}}}\]
+\textbf{Load factor of a practice in a laboratory}, t in hours, 40 (total number of hours in the laboratory, can be changed), and activity both in the same unit. The sum of all the experiments together is the Load Factor (<1 !!)
 %--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \chapter{Useful information}
 \begin{figure}
@@ -83,9 +89,50 @@ TLD & Personal dosimeter & Personal dosimeter \\
 \textbf{\begin{tabular}[c]{@{}l@{}}Members of the public\\ Excluding patients\end{tabular}} & 1 & 15 & 50
 \end{tabular}
 \end{table}
+\begin{table}
+    \centering
+\caption{Dispersion parameter p}
+\label{tab:placeholder}
+    \begin{tabular}{c>{\raggedright\arraybackslash}p{0.5\linewidth}}\toprule
+         p& Phase of material or type of manipulation\\\midrule
+         -4& Simple work with gases, mixing or grounding of powders, liquid close to boiling point, highly splashing activities\\
+         -3& Labelling with volatile compounds, centrifugation, mixing on a vortex, simple work with powder in a closed system, storage of a noble gas in a dispenser, boiling of liquids in a closed system\\
+         -2& Simple chemical manipulations, labelling with a non-volatile nucleide\\
+         -1& Manipulation in a closed system, pulling up syringes, labelling in closed systems, calibration, labelling of non-dispersible compounds, storage of radioactive waste in a laboratory.\\ \bottomrule
+    \end{tabular}
+    
+    
+\end{table}
 
-
-
+\begin{table}
+    \centering
+\caption{Laboratory parameter q}
+\label{tab:placeholder}
+    \begin{tabular}{cc}\toprule
+         q& Laboratory class\\\midrule
+         0& Outside RNL\\
+         1& Class D\\
+         2& Class C\\
+ 3&Class B\\ \bottomrule
+    \end{tabular}
+    
+    
+\end{table}
+\begin{table}[h]
+    \centering
+\caption{Local ventilation parameter r}
+\label{tab:local_ventilation}
+    \begin{tabular}{c>{\raggedright\arraybackslash}m{10cm}}
+        \toprule
+        \textbf{r} & \textbf{Local ventilation} \\ \midrule
+        0 & Working outside the fume hood, on a bench \\ 
+        1 & Local ventilation, or working in a fume hood that does not comply with the (Dutch-European) standard NEN-EN 14175, but where less than 10\% of the material released in the fume hood can reach the workspace. \\ 
+        2 & Good fume hood (less than 1\% of the material released in the fume hood can reach the workspace), for example a fume hood compliant with NEN-EN 14175 in terms of construction and NPR 4500 in terms of placement, or a class II biosafety cabinet. \\ 
+        3 & Closed cabinet: for example, class III cabinet for biological safety or closed Laminar Air Flow Isolator. \\ \bottomrule
+    \end{tabular}
+    
+    
+\end{table}
 
 
 
