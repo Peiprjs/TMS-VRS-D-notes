@@ -1,13 +1,31 @@
-\section{Introduction}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Detector material}
+Depending on the material of the detector, different types of radiation can be measured.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Ionisation detectors}
+\subsection{Gas-filled}
+\subsubsection{The ionisation chamber}
+In the ionisation chamber, the applied voltage between cathode and anode is low, but large enough to prevent recombination of the electron-ion pair. If they recombine into a neutral molecule, no current pulse will be formed. If electron-ion pairs, they can be detected as an electric pulse. It's rarely used, as it is tricky to process the data. It may be used when the dose rate is very high.
+\subsubsection{The proportional counter}
+Using a higher voltage causes a stronger electric field, in which the electrons are accelerated to such high energies that they cause new ionizations. As a consequence, the signal will be increased proportionally. The thin window allows for detection of $\alpha$ and $\beta$ particles. To boost X-ray and low-energy $\gamma$ radiation, a high-Z-value gas is used.
+\subsubsection{GM tube}
+The GM tube uses a higher voltage, and regardless of the energy, each incident particle will cause an avalanche of electron-ion pairs. It's useful for small-surface contaminations. It's mostly a qualitative (boolean) measurement.
+\subsection{Solid-state semiconductor detectors}
+These are very expensive to use, as they require tons of active cooling. However, they give a very detailed spectrum of energies released.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Scintillation detectors}
+\subsection{Solid state scintillation detectors}
+Most notable is ThermoLuminescence Detectors (TLDs), used in personal dosimeter badges. The radiation is "stored" as electrons, and can be released with heat.
+\subsection{Liquid scintillation}
+Liquid scintillation is an organic solvent with an organic scintillator. The sample being dissolved in here helps it detect even extremely low energy samples.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{Application of radiation detection outside the field of radiation protection}
+\section{Application of radiation detection in radiation protection}
+\subsection{Identification of a source}
+Sometimes, the nuclide is unknown. When there's a limited number of possibilities, different shielding materials can be used to compare activity after half-thicknesses with theoretical values. The energy can be measured, or solid state detectors can be used to get a spectrum.
+\subsection{Determination of the activity}
+Activity can be estimated by holding the source in front of a contamination monitor. For more precise applications, various detectors can be used.
+\subsection{Determination of the dose rate}
+Dose rate from $\beta$ and $\gamma$ particles can be measured with a dosimeter. 
+\subsection{Measurement of active contamination}
+Contamination monitors are used to determine whether radioactivity is present. These contamination monitors are much more sensitive than dosimeters. For small areas, simple GM tubes are used for $\beta$, while NaI crystals are used for $\gamma$. For $\alpha$, ZnS scintillation detectors are used, though a swipe test and liquid scintillation count is more effective. \\
+Proportional counters can be used for large surface contaminations. A Hand Feet Clothes monitor is used at the exit of the laboratory, to check whether there is contamination.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{Counting error, measurement ssensitivity and efficiency}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{Recommendations for measurements in practice}

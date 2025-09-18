@@ -1,11 +1,31 @@
-\section{Introduction}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{The ambient dose equivalents}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{External irradiation by a radioactive source emitting $\gamma$ radiation}
+The 10 H(10) refers to the depth in mm in a phantom (tissue equivalent)
+\subsection{Time}
+The duration of the exposure determines the ambient dose equivalent:
+\[H^*(10)=\dot{H}^*(10)\cdot t\]
+\subsection{Distance}
+Radiation follows the inverse square law
+\[\dot{H}^*(10)(10) = h(10)\cdot\frac{A}{r^2}\]
+\subsection{Shielding}
+For $\gamma$ radiation, it applies that
+\[I(d) = I(0)\cdot B\cdot(\frac{1}{2})^{\frac{d}{d_{1/2}}}\]
+Therefore
+\[\overset{.}{H^*}(10)_{shielding} = \dot{H}^*(10)(10)_{raw} \cdot B\cdot(\frac{1}{2})^{\frac{d}{d_{1/2}}}\]
+\subsection{Full formula for the ambient dose equivalent rate}
+\begin{equation}
+    \dot{H}^*(10)_{\text{(at distance r, with shielding d)}} = h(10) \cdot \frac{A}{r^2} \cdot B \cdot \left(\frac{1}{2}\right)^{\frac{d}{d_{1/2}}}
+    \label{eq:placeholder}
+\end{equation}
+\subsection{Rule of thumb for $\gamma$ radiation}
+\[\dot{H}^*(10) = 2A \approx \dot{E}\]
+With A in MBq and $\dot{H}^*(10)$ in $\mu$Sv/h. For $\dot{E}$, this is at a distance of 30cm from the source, without shielding.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Skin irradiation}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{External irradiation by X-ray equipment}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{Dose resulting from internal contamination}
+\subsection{Rule of thumb for external radiation of the skin by $\beta$ (+ and -) radiation}
+\[\dot{H}^*(0.07) = 1000\cdot A\]
+This formula is for a source 10 cm away from the skin without shielding. \\
+Where the 0.07 represents a depth of 0.07 mm in a phantom, representing the top layer of skin. The annihilation photons ($\beta^+$) have a negligible contribution.
+
+\subsection{Rule of thumb for external contamination of the skin by $\beta$ (+ and -) radiation}
+\[\dot{H}^*(0.07) = 2000\cdot A\]
+With A units of kBq/cm².
