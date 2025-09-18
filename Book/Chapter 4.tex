@@ -1,7 +1,22 @@
-\section{Introduction}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-\section{Physical quantities and units}
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Quantities and units describing the risk}
+\subsection{Absorbed dose}
+The absorbed dose (D) is the energy absorbed per unit mass. The unit is the Gray (Gy), which equals 1 J/kg. 1 Gy \approx 100 Röntgen. The absorbed dose rate is Gy/h.
+
+\subsection{Equivalent dose}
+The equivalent dose depends on the type of radiation. 
+\[H_T=W_R\cdot D\]
+Where $H_T$ is the absorbed dose for tissue and organ, $W_R$ is the radiation weighting factor (1 for $\beta$ and $\gamma$, 20 for $\alpha$ particles, and 2-20 for neutrons. Its unit is the same as for absorbed dose, but is called Sievert (Sv).
+
+\subsection{Effective dose}
+An equivalent dose for the whole body correlates with a higher risk than an equivalent dose in a part of the body. This is what the Effective Dose is for. It gives an approximation of the total body dose. The equivalent dose for each tissue is multiplied by a $W_T$ tissue weighting factor.
+\[E=\sum W_T \cdot H_T = \sum W_T \cdot W_R \cdot D\]
+
+\subsection{Committed dose}
+After an intake of radioactive substances in the body, tissues will be irradiated. The equivalent dose caused by this is calculated with the committed equivalent dose $H_T(50)$ (50 = summation period of 50 years for adults).
+\[E(50) = e(50)\cdot A\]
+Where e(50) is the committed dose coefficient. These coefficients vary, and depend on the rate of excretion, physical decay, and uptake paths. Some substances can enter the body in different ways, so there's different e(50) for inhalation, ingestion and inoculation.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 \section{Quantities and units in measurements}
+Measurements are often not fully accurate, and approximations are taken. 
+\subsection{H*(10) and H*(0.07)}
+A phantom is an object that mimics the human body, in this case, a sphere of diameter 30cm. A measurement of the equivalent dose is done at a depth of 10 mm in the phantom, which is a good estimate of the effective dose of a human standing in a parallel incident radiation field. The H*(10) is based on this, and it's called the ambient dose equivalent (Sv). Below 100 keV, this causes an overestimation of E. For photons under 50 keV, this can lead to up to 5x overestimation. It's only a good measure for whole-body irradiation. If only part of the body is irradiated, it is a good measure for the equivalent dose to that part of the body. However, it's only aq good measure if the body is irradiated from front to back. If the irradiation is back to front, it causes a 30\% overestimation. It is not a good equivalent for the skin dose, for which H*(0.07) is used.
